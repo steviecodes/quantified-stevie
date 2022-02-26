@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Posts', type: :request do
@@ -6,7 +8,7 @@ RSpec.describe 'Posts', type: :request do
       FactoryBot.create_list(:track, 10)
       get '/api/v1/tracks'
     end
-    
+
     it 'returns all tracks' do
       expect(json.size).to eq(10)
     end
