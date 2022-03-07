@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_26_085436) do
+ActiveRecord::Schema.define(version: 2022_03_07_223600) do
 
   create_table "tracks", force: :cascade do |t|
     t.integer "album_id"
@@ -23,6 +23,9 @@ ActiveRecord::Schema.define(version: 2022_02_26_085436) do
     t.string "artists"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "image_64"
+    t.string "image_300"
+    t.string "image_640"
   end
 
 end
